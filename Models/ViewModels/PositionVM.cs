@@ -5,7 +5,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 namespace Models.Models
 {
-    class Position
+    class PositionVM
     {
         private int positionId;
         private int projectId;
@@ -14,8 +14,9 @@ namespace Models.Models
         private string description;
         private Project thisProject;
         private Contractor thisContractor;
+        private List<Skill> skillsNeeded;
 
-        public Position(int projectId, string contractorId, string positionTitle, string description)
+        public PositionVM(int projectId, string contractorId, string positionTitle, string description)
         {
             ProjectId = projectId;
             ContractorId = contractorId;
@@ -30,5 +31,6 @@ namespace Models.Models
         public string Description { get => description; set => description = value; }
         internal Project ThisProject { get => thisProject; set => thisProject = value; }
         internal Contractor ThisContractor { get => thisContractor; set => thisContractor = value; }
+        internal List<Skill> SkillsNeeded { get => skillsNeeded; set => skillsNeeded = value; }
     }
 }
