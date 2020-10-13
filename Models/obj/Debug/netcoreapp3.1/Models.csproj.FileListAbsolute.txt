@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\Team2_P2\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+C:\Users\admin\Desktop\Team2_P2\Models\bin\Debug\netcoreapp3.1\Models.dll
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+C:\Users\admin\Desktop\Team2_P2\Models\bin\Debug\netcoreapp3.1\Models.runtimeconfig.json
+C:\Users\admin\Desktop\Team2_P2\Models\bin\Debug\netcoreapp3.1\Models.runtimeconfig.dev.json
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.genruntimeconfig.cache
+C:\Users\admin\Desktop\Team2_P2\Models\bin\Debug\netcoreapp3.1\Models.pdb
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.dll
+C:\Users\admin\Desktop\Team2_P2\Models\obj\Debug\netcoreapp3.1\Models.pdb
