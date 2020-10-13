@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Models.Models
 {
-    class Class1
+    public class LoginInfo
     {
+
+        public int LoginInfoId { get; set; }
+        public string Username { get; set; }
+
+        public string Password { get; set; }
+
     }
 }
