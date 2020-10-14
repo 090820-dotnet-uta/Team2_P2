@@ -14,7 +14,9 @@ namespace Models.Models
         private string lastName;
         private string description;
         private string email;
-        private LoginInfo thisLoginInfo;
+
+      //  private LoginInfo thisLoginInfo;
+
 
         public Contractor(string username, string firstName, string lastName, string description, string email)
         {
@@ -31,6 +33,10 @@ namespace Models.Models
         public string LastName { get => lastName; set => lastName = value; }
         public string Description { get => description; set => description = value; }
         public string Email { get => email; set => email = value; }
-        internal LoginInfo ThisLoginInfo { get => thisLoginInfo; set => thisLoginInfo = value; }
+
+        //internal LoginInfo ThisLoginInfo { get => thisLoginInfo; set => thisLoginInfo = value; }
+
+      //  internal LoginInfo ThisLoginInfo { get => thisLoginInfo; set => thisLoginInfo = value; }
+
     }
 }
