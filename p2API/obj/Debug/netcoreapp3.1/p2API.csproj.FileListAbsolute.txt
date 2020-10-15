@@ -152,3 +152,4 @@ C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\staticwebassets\p2
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.dll
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.pdb
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.genruntimeconfig.cache
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\githelp - Web Deploy\profile.arm.json
