@@ -25,6 +25,7 @@ namespace p2API.Controllers
 
         [HttpPost]
         [Route("Register")]
+        
         //POST : /api/ApplicationUser/Register
         public async Task<Object> PostApplicationUser(LoginInfoVM model)
         {
@@ -43,10 +44,44 @@ namespace p2API.Controllers
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
+  
+
+        [HttpGet]
+        [Route("Profile")]
+        //GET : /api/ApplicationUser/Profile
+        public async Task<Object> GetCurrentUserProfile()
+        {
+            string userId = User.Claims.First(c => c.Type == "UserID").Value;
+            var user = await _userManager.FindByIdAsync(userId);
+            return new
+            {
+                user.FirstName,
+                user.LastName,
+                user.Email,
+                user.UserName
+            };
+        }
+
+
+        [HttpGet("{email}")]
+        [Route("Profile{email}")]
+        //GET : /api/ApplicationUser/Profile/{email}
+        public async Task<Object> GetUserProfile(string email)
+        {
+            
+            var user = await _userManager.FindByEmailAsync(email);
+            return new
+            {
+                user.FirstName,
+                user.LastName,
+                user.Email,
+                user.UserName
+            };
+        }
+
     }
 }
 
