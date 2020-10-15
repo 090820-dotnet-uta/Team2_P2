@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>p2API</ActiveDebugProfile>
     <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>githelp - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

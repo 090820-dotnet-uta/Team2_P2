@@ -66,13 +66,15 @@ namespace p2API.Controllers
         }
 
 
-        [HttpGet("{email}")]
-        [Route("Profile{email}")]
-        //GET : /api/ApplicationUser/Profile/{email}
-        public async Task<Object> GetUserProfile(string email)
+
+
+        [HttpGet("{username}")]
+       
+        //GET : /api/ApplicationUser/{email}
+        public async Task<Object> GetUserProfile(string username)
         {
             
-            var user = await _userManager.FindByEmailAsync(email);
+            var user = await _userManager.FindByNameAsync(username);
             return new
             {
                 user.FirstName,
