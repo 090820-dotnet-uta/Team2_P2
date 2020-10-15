@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Models.Models
 {
-    class Project
+   public class Project
     {
         private int projectId;
         private int clientId;
