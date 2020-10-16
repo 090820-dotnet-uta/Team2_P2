@@ -68,7 +68,7 @@ namespace p2API.Controllers
 
 
 
-        [HttpGet("{username}")]
+        [HttpGet("{email}")]
        
         //GET : /api/ApplicationUser/{email}
         public async Task<Object> GetUserProfile(string username)

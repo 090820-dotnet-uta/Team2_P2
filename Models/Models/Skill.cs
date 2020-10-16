@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Models.Models
 {
-    class Skill
+   public class Skill
     {
         private int skillId;
         private string skillName;

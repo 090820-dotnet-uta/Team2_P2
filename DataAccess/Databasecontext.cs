@@ -31,7 +31,12 @@ namespace DataAccess.DataAccess
 
 
         public DbSet<LoginInfo> LoginInfos { get; set; }
+        public DbSet<Contractor> Contractors { get; set; }
 
+        public DbSet<Position> Positions { get; set; }
 
+        public DbSet<Skill> Skills { get; set; }
+
+        public DbSet<Project> Projects { get; set; }
     }
 }

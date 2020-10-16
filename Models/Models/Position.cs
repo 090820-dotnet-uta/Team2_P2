@@ -5,7 +5,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 namespace Models.Models
 {
-    class Position
+    public class Position
     {
         private int positionId;
         private int projectId;
