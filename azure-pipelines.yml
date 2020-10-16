@@ -46,4 +46,4 @@ steps:
     azureSubscription: 'Azure subscription 1(ca94896a-2ad6-4c15-998f-06a093ec4590)'
     appType: 'webApp'
     WebAppName: 'githelp'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)'
