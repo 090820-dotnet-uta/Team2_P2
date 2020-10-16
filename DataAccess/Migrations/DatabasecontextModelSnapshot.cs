@@ -276,6 +276,33 @@ namespace DataAccess.Migrations
                     b.ToTable("Positions");
                 });
 
+            modelBuilder.Entity("Models.Models.Project", b =>
+                {
+                    b.Property<int>("ProjectId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("PaymentOffered")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ProjectName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ProjectId");
+
+                    b.ToTable("Projects");
+                });
+
             modelBuilder.Entity("Models.Models.Skill", b =>
                 {
                     b.Property<int>("SkillId")
