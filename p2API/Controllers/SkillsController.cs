@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.DataAccess;
 using Models.Models;
+using Models.ViewModels;
 
 namespace p2API.Controllers
 {
@@ -78,12 +79,19 @@ namespace p2API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Skill>> PostSkill(Skill skill)
+        public async Task<ActionResult<Skill>> PostSkill(SkillsVM model)
         {
-            _context.Skills.Add(skill);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSkill", new { id = skill.SkillId }, skill);
+            var skill = new Skill()
+            {
+                
+                SkillName = model.skillName,
+                Description = model.skillDescription
+            };
+            _context.Skills.Add(skill);
+            var result = await _context.SaveChangesAsync();
+
+            return Ok(result);
         }
 
         // DELETE: api/Skills/5

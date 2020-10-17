@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.DataAccess;
 using Models.Models;
+using Models.ViewModels;
 
 namespace p2API.Controllers
 {
@@ -80,12 +81,16 @@ namespace p2API.Controllers
         [HttpPost]
         public async Task<ActionResult<Project>> PostProject(Project project)
         {
+            
             _context.Projects.Add(project);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetProject", new { id = project.ProjectId }, project);
         }
 
+
+
+        
         // DELETE: api/Projects/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Project>> DeleteProject(int id)

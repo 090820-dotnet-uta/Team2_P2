@@ -243,6 +243,9 @@ C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeA
 C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.MvcApplicationPartsAssemblyInfo.cache

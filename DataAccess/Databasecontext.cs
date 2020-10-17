@@ -36,6 +36,7 @@ namespace DataAccess.DataAccess
         public DbSet<Position> Positions { get; set; }
 
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Client> Clients { get; set; }
 
         public DbSet<Project> Projects { get; set; }
     }
