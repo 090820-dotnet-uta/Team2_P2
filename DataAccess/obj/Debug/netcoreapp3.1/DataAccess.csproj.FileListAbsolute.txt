@@ -23,8 +23,8 @@ C:\Users\admin\Desktop\Team2_P2\DataAccess\bin\Debug\netcoreapp3.1\Models.pdb
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
-C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
 C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache
+C:\Users\admin\Desktop\Team2_P2\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache

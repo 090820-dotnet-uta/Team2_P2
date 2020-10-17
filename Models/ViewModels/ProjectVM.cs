@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Models.Models
 {
-    class ProjectVM
+   public class ProjectVM
     {
         private int projectId;
         private int clientId;
@@ -15,7 +15,7 @@ namespace Models.Models
         private double paymentOffered;
         private string projectName;
         private Client thisClient;
-        private List<Position> positions;
+   //     private List<Position> positions;
 
         public ProjectVM(int clientId, DateTime startDate, DateTime endDate, double paymentOffered, string projectName)
         {
@@ -24,7 +24,7 @@ namespace Models.Models
             EndDate = endDate;
             PaymentOffered = paymentOffered;
             ProjectName = projectName;
-        }
+        }  
 
         public int ProjectId { get => projectId; set => projectId = value; }
         public int ClientId { get => clientId; set => clientId = value; }
@@ -32,6 +32,6 @@ namespace Models.Models
         public DateTime EndDate { get => endDate; set => endDate = value; }
         public double PaymentOffered { get => paymentOffered; set => paymentOffered = value; }
         public string ProjectName { get => projectName; set => projectName = value; }
-        internal Client ThisClient { get => thisClient; set => thisClient = value; }
+ //       internal Client ThisClient { get => thisClient; set => thisClient = value; }
     }
 }

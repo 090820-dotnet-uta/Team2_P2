@@ -5,7 +5,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 namespace Models.Models
 {
-    class Client
+ public class Client
     {
         private int clientId;
         private string username;

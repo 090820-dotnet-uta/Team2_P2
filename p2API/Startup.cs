@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Models.Models;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace p2API
 {
     public class Startup
@@ -30,6 +31,7 @@ namespace p2API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddDbContext<Databasecontext>(options => options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
             services.AddDefaultIdentity<LoginInfo>(options => options.SignIn.RequireConfirmedAccount = false)
                     .AddEntityFrameworkStores<Databasecontext>();
