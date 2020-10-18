@@ -1671,6 +1671,20 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
+      "Stripe.net/39.16.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
+          "Newtonsoft.Json": "11.0.1",
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1950,7 +1964,7 @@
           "System.Security.Permissions": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -3207,7 +3221,8 @@
           "Microsoft.EntityFrameworkCore.Relational": "3.1.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.9",
           "Models": "1.0.0",
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "12.0.3",
+          "Stripe.net": "39.16.0"
         },
         "compile": {
           "bin/placeholder/DataAccess.dll": {}
@@ -3223,7 +3238,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.9",
           "Microsoft.Extensions.Identity.Stores": "3.1.9",
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "12.0.3",
+          "Stripe.net": "39.16.0"
         },
         "compile": {
           "bin/placeholder/Models.dll": {}
@@ -5621,6 +5637,25 @@
         "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll",
         "sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
+      ]
+    },
+    "Stripe.net/39.16.0": {
+      "sha512": "O4Sht6fompvHyBr1BdQdqlo00ZnjF2mWic1huVqQuNJdcQyLT8USg4LbZqg4zMos9flfwSmZeW9e+dody24q6A==",
+      "type": "package",
+      "path": "stripe.net/39.16.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.pdb",
+        "lib/net461/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.pdb",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.39.16.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -9909,19 +9944,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ajmarron\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\p2API\\p2API.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API\\p2API.csproj",
       "projectName": "p2API",
-      "projectPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\p2API\\p2API.csproj",
-      "packagesPath": "C:\\Users\\ajmarron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\p2API\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API\\p2API.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ajmarron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9934,8 +9969,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\DataAccess.csproj"
             }
           }
         }

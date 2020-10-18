@@ -42,6 +42,64 @@ namespace p2API.Controllers
 
             return project;
         }
+        [HttpGet("Contractor/{id}")]
+        public async Task<ActionResult<Project>> GetProjectByContractor(string id)
+        {
+            List<Project> projects = new List<Project>();
+            var query = await _context.ProjectPositions.Where(p => (p.ContractorId == id)).ToListAsync();
+            foreach (var stuff in query)
+            {
+                var project = await _context.Projects.FirstOrDefaultAsync(a => (a.ProjectId == stuff.ProjectId));
+                projects.Add(project);
+            }
+
+
+
+
+
+            if (projects == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(projects);
+        }
+
+        [HttpGet("userId/{id}")]
+        public async Task<ActionResult<Project>> GetProjectByUser(string id)
+        {
+
+            var project = await _context.Projects.Where(p => (p.UserId == id)).ToListAsync();
+            
+
+
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(project);
+        }
+
+        [HttpGet("Latest/{id}")]
+        public async Task<ActionResult<Project>> GetLatestProjectByUser(string id)
+        {
+
+            var projects = await _context.Projects.Where(p => (p.UserId == id)).ToListAsync();
+            Project project = projects.Last();
+
+
+
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(project);
+        }
+
+
+
 
         // PUT: api/Projects/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
@@ -74,6 +132,8 @@ namespace p2API.Controllers
 
             return NoContent();
         }
+
+
 
         // POST: api/Projects
         // To protect from overposting attacks, enable the specific properties you want to bind to, for

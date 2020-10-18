@@ -279,6 +279,42 @@ namespace DataAccess.Migrations
                     b.ToTable("Contractors");
                 });
 
+            modelBuilder.Entity("Models.Models.HireRequest", b =>
+                {
+                    b.Property<int>("HireRequestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClientId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ContractorId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("PositionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RequestStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HireRequestId");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("ContractorId");
+
+                    b.ToTable("HireRequests");
+
+                    b.HasData(
+                        new
+                        {
+                            HireRequestId = 1,
+                            PositionId = 1,
+                            RequestStatus = "Pending"
+                        });
+                });
+
             modelBuilder.Entity("Models.Models.Position", b =>
                 {
                     b.Property<int>("PositionId")
@@ -352,22 +388,16 @@ namespace DataAccess.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("ContractorId")
+                    b.Property<string>("ContractorId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PositionId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PositionId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ProjectId")
+                    b.Property<int>("ProjectId")
                         .HasColumnType("int");
 
                     b.HasKey("ProjectPositionsId");
-
-                    b.HasIndex("ContractorId");
-
-                    b.HasIndex("PositionId");
-
-                    b.HasIndex("ProjectId");
 
                     b.ToTable("ProjectPositions");
                 });
@@ -475,19 +505,15 @@ namespace DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Models.Models.ProjectPositions", b =>
+            modelBuilder.Entity("Models.Models.HireRequest", b =>
                 {
-                    b.HasOne("Models.Models.Contractor", "Contractor")
+                    b.HasOne("Models.Models.LoginInfo", "ThisClient")
+                        .WithMany()
+                        .HasForeignKey("ClientId");
+
+                    b.HasOne("Models.Models.LoginInfo", "ThisContractor")
                         .WithMany()
                         .HasForeignKey("ContractorId");
-
-                    b.HasOne("Models.Models.Position", "Position")
-                        .WithMany()
-                        .HasForeignKey("PositionId");
-
-                    b.HasOne("Models.Models.Project", "Project")
-                        .WithMany()
-                        .HasForeignKey("ProjectId");
                 });
 #pragma warning restore 612, 618
         }
