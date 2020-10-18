@@ -25,6 +25,14 @@ namespace DataAccess.DataAccess
            protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<HireRequest>()
+             .HasOne(c => c.ThisClient)
+             .WithMany()
+             .HasForeignKey(u => u.ClientId);
+            modelBuilder.Entity<HireRequest>()
+             .HasOne(c => c.ThisContractor)
+             .WithMany()
+             .HasForeignKey(u => u.ContractorId);
         }
     
 
