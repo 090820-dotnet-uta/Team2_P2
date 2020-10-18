@@ -32,6 +32,8 @@ namespace Models.Models
         public DateTime EndDate { get => endDate; set => endDate = value; }
         public double PaymentOffered { get => paymentOffered; set => paymentOffered = value; }
         public string ProjectName { get => projectName; set => projectName = value; }
+
+     
  //       internal Client ThisClient { get => thisClient; set => thisClient = value; }
     }
 }
