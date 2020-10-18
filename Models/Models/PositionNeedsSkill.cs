@@ -5,7 +5,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 namespace Models.Models
 {
-    class PositionNeedsSkill
+   public class PositionNeedsSkill
     {
         private int positionNeedsSkillId;
         private int positionId;

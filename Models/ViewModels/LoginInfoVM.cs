@@ -15,6 +15,7 @@ namespace Models.ViewModels
 
         public string Lastname { get; set; }
 
+        public string AccountType { get; set; }
 
     }
 }

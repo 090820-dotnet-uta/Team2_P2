@@ -9,28 +9,32 @@ namespace Models.Models
    public class Project
     {
         private int projectId;
-        private int clientId;
+        private string userId;
         private DateTime startDate;
         private DateTime endDate;
         private double paymentOffered;
         private string projectName;
-        private Client thisClient;
+        private LoginInfo thisUser;
+        private string description;
 
-        public Project(int clientId, DateTime startDate, DateTime endDate, double paymentOffered, string projectName)
+        public Project( string userId, DateTime startDate, DateTime endDate, double paymentOffered, string projectName, string description)
         {
-            ClientId = clientId;
+            UserId = userId;
             StartDate = startDate;
             EndDate = endDate;
             PaymentOffered = paymentOffered;
             ProjectName = projectName;
+            Description = description;
         }
 
         public int ProjectId { get => projectId; set => projectId = value; }
-        public int ClientId { get => clientId; set => clientId = value; }
+        public string UserId { get => userId; set => userId = value; }
         public DateTime StartDate { get => startDate; set => startDate = value; }
         public DateTime EndDate { get => endDate; set => endDate = value; }
         public double PaymentOffered { get => paymentOffered; set => paymentOffered = value; }
         public string ProjectName { get => projectName; set => projectName = value; }
-        internal Client ThisClient { get => thisClient; set => thisClient = value; }
+        internal LoginInfo ThisUser { get => thisUser; set => thisUser = value; }
+
+        public string Description { get => description; set => description = value; }
     }
 }

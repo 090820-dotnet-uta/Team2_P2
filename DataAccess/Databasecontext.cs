@@ -39,5 +39,11 @@ namespace DataAccess.DataAccess
         public DbSet<Client> Clients { get; set; }
 
         public DbSet<Project> Projects { get; set; }
+
+        public DbSet<ProjectPositions> ProjectPositions { get; set; }
+
+        public DbSet <PositionNeedsSkill> PositionNeedsSkills { get; set; }
+
+        public DbSet <UserHasSkill> UserHasSkills { get; set; }
     }
 }
