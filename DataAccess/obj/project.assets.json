@@ -6424,19 +6424,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\ajmarron\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\ajmarron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ajmarron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6449,8 +6449,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\Team2_P2\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\Models\\Models.csproj"
+            "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\Models\\Models.csproj"
             }
           }
         }

@@ -3214,10 +3214,7 @@
         },
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Models/1.0.0": {
         "type": "project",
@@ -3233,10 +3230,7 @@
         },
         "runtime": {
           "bin/placeholder/Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -9915,19 +9909,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\ajmarron\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API\\p2API.csproj",
+      "projectUniqueName": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\p2API\\p2API.csproj",
       "projectName": "p2API",
-      "projectPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API\\p2API.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API\\obj\\",
+      "projectPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\p2API\\p2API.csproj",
+      "packagesPath": "C:\\Users\\ajmarron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\p2API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ajmarron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9940,8 +9934,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\ajmarron\\Desktop\\Revature\\Team2_P2\\DataAccess\\DataAccess.csproj"
             }
           }
         }
