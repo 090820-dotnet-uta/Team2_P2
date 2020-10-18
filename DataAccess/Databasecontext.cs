@@ -21,8 +21,8 @@ namespace DataAccess.DataAccess
             optionsBuilder.EnableSensitiveDataLogging();
         }
 
-       
-           protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<HireRequest>()
@@ -33,7 +33,20 @@ namespace DataAccess.DataAccess
              .HasOne(c => c.ThisContractor)
              .WithMany()
              .HasForeignKey(u => u.ContractorId);
+            modelBuilder.Entity<HireRequest>().HasData(
+              new HireRequest(1, "101", "100")
+              {
+                  HireRequestId = 1,
+                  ContractorId = null,
+                  ClientId = null,
+                  RequestStatus = "Pending"
+
+
+              }
+             );
+
         }
+
     
 
 
@@ -53,5 +66,7 @@ namespace DataAccess.DataAccess
         public DbSet <PositionNeedsSkill> PositionNeedsSkills { get; set; }
 
         public DbSet <UserHasSkill> UserHasSkills { get; set; }
+
+        public DbSet <HireRequest> HireRequests { get; set; }
     }
 }

@@ -17,6 +17,10 @@ namespace Models.Models
         private LoginInfo thisUser;
         private string description;
 
+
+
+
+
         public Project( string userId, DateTime startDate, DateTime endDate, double paymentOffered, string projectName, string description)
         {
             UserId = userId;

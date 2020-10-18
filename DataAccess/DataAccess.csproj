@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201018223144_newest123.cs" />
+    <Compile Remove="Migrations\20201018223144_newest123.Designer.cs" />
+    <Compile Remove="Migrations\20201018223305_newest1234.cs" />
+    <Compile Remove="Migrations\20201018223305_newest1234.Designer.cs" />
+    <Compile Remove="Migrations\20201018230402_123456.cs" />
+    <Compile Remove="Migrations\20201018230402_123456.Designer.cs" />
+    <Compile Remove="Migrations\20201018230823_bew1.cs" />
+    <Compile Remove="Migrations\20201018230823_bew1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />
@@ -17,6 +28,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Stripe.net" Version="39.16.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -21,7 +21,7 @@ namespace Models.Models
             PositionId = positionId;
             ClientId = clientId;
             ContractorId = contractorId;
-            ContractorId = "pending";
+           // ContractorId = "pending";
         }
 
         public int HireRequestId { get => hireRequestId; set => hireRequestId = value; }

@@ -250,3 +250,4 @@ C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCo
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admin\Desktop\Team2_P2\p2API\obj\Debug\netcoreapp3.1\p2API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Debug\netcoreapp3.1\Stripe.net.dll

@@ -10,11 +10,11 @@ namespace Models.Models
 
 
         public int ProjectPositionsId { get; set; }
-        public Project Project { get; set; }
+        public int ProjectId { get; set; }
         
-        public Position Position { get; set; }
+        public int PositionId { get; set; }
 
-        public Contractor Contractor { get; set; }
+        public string ContractorId { get; set; }
 
 
 
