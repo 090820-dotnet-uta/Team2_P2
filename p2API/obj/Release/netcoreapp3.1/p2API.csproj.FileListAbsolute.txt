@@ -174,3 +174,6 @@ C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\Microsoft.AspNet
 C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\Stripe.net.dll
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\AspNet.Security.OAuth.LinkedIn.dll
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\RestSharp.dll
+C:\Users\admin\Desktop\Team2_P2\p2API\bin\Release\netcoreapp3.1\Stripe.dll

@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.OAuth;
+using Stripe;
 
 namespace p2API
 {
@@ -32,7 +34,10 @@ namespace p2API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
+
+            var stripe = Configuration.GetSection("Stripe");
+            StripeConfiguration.ApiKey = stripe[""];
             services.AddControllers();
             services.AddControllers().AddNewtonsoftJson();
             services.AddDbContext<Databasecontext>(options => options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
@@ -66,6 +71,12 @@ namespace p2API
                     ClockSkew = TimeSpan.Zero
                 };
             });
+
+            //////services.AddAuthentication().AddLinkedIn(options =>
+            //////{
+            //////    options.ClientId = Configuration["LinkedInAuthSettings:AppId"];
+            //////    options.ClientSecret = Configuration["LinkedInAuthSettings:AppSecret"];
+            //////});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

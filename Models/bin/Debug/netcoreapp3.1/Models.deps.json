@@ -8,14 +8,25 @@
     ".NETCoreApp,Version=v3.1": {
       "Models/1.0.0": {
         "dependencies": {
+          "AspNet.Security.OAuth.LinkedIn": "3.1.4",
+          "Microsoft.AspNetCore.Authentication.OAuth": "2.2.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.9",
           "Microsoft.Extensions.Identity.Stores": "3.1.9",
           "Newtonsoft.Json": "12.0.3",
+          "Stripe": "1.12.0",
           "Stripe.net": "39.16.0"
         },
         "runtime": {
           "Models.dll": {}
+        }
+      },
+      "AspNet.Security.OAuth.LinkedIn/3.1.4": {
+        "runtime": {
+          "lib/netcoreapp3.1/AspNet.Security.OAuth.LinkedIn.dll": {
+            "assemblyVersion": "3.1.4.0",
+            "fileVersion": "3.100.420.50671"
+          }
         }
       },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -46,6 +57,12 @@
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.OAuth/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication": "2.2.0",
+          "Newtonsoft.Json": "12.0.3"
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.9": {
@@ -354,6 +371,25 @@
           }
         }
       },
+      "RestSharp/105.0.1": {
+        "runtime": {
+          "lib/net4/RestSharp.dll": {
+            "assemblyVersion": "105.0.1.0",
+            "fileVersion": "105.0.1.0"
+          }
+        }
+      },
+      "Stripe/1.12.0": {
+        "dependencies": {
+          "RestSharp": "105.0.1"
+        },
+        "runtime": {
+          "lib/net40/Stripe.dll": {
+            "assemblyVersion": "1.12.0.0",
+            "fileVersion": "1.12.0.0"
+          }
+        }
+      },
       "Stripe.net/39.16.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
@@ -433,6 +469,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AspNet.Security.OAuth.LinkedIn/3.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KO5zl0sk4VoQpKm/ymguzCHEXLDtjTOxw7aMWagd2c6kJeulqS7LPBVR0k+sW9mAOzQSDqwPshen5xfARE3hlg==",
+      "path": "aspnet.security.oauth.linkedin/3.1.4",
+      "hashPath": "aspnet.security.oauth.linkedin.3.1.4.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -460,6 +503,13 @@
       "sha512": "sha512-XlVJzJ5wPOYW+Y0J6Q/LVTEyfS4ssLXmt60T0SPP+D8abVhBTl+cgw2gDHlyKYIkcJg7btMVh383NDkMVqD/fg==",
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.OAuth/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i33SSdJd0g3ENRnHczgzrOlru3ciPsyYHMgAh90sbURS8wuBx0Y4xXfRQcYfu1W0/uiHQO832KNb/ICINWqLzA==",
+      "path": "microsoft.aspnetcore.authentication.oauth/2.2.0",
+      "hashPath": "microsoft.aspnetcore.authentication.oauth.2.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.9": {
       "type": "package",
@@ -719,6 +769,20 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "RestSharp/105.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2jEivNmSZFsK/iyoOu0l9+pEM2hXLQCvOQdLgQcr92cdnirl2xm+Wddy7lP6JTwZSLjAQ1ogHlal1tLu5hfZPw==",
+      "path": "restsharp/105.0.1",
+      "hashPath": "restsharp.105.0.1.nupkg.sha512"
+    },
+    "Stripe/1.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IZ4xMz4vWqgH7RUyQMU/bljlr+gr/r/EMKUIg/PjTVjuyuXoXjbalgDnfDZ77GogCzJME3XIP1anBIMbaF4gvg==",
+      "path": "stripe/1.12.0",
+      "hashPath": "stripe.1.12.0.nupkg.sha512"
     },
     "Stripe.net/39.16.0": {
       "type": "package",

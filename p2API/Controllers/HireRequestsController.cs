@@ -21,14 +21,13 @@ namespace p2API.Controllers
             _context = context;
         }
 
-        // GET: api/HireRequests
         [HttpGet]
         public async Task<ActionResult<IEnumerable<HireRequest>>> GetHireRequests()
         {
             return await _context.HireRequests.ToListAsync();
         }
 
-        // GET: api/HireRequests/5
+     
         [HttpGet("{id}")]
         public async Task<ActionResult<HireRequest>> GetHireRequest(int id)
         {
@@ -71,9 +70,8 @@ namespace p2API.Controllers
 
             return Ok(hireRequest);
         }
-        // PUT: api/HireRequests/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+       
+    
         [HttpPut("{id}")]
         public async Task<IActionResult> PutHireRequest(int id, HireRequest hireRequest)
         {
@@ -103,10 +101,8 @@ namespace p2API.Controllers
             return NoContent();
         }
 
-        // POST: api/HireRequests
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
+     
+
         public async Task<ActionResult<HireRequest>> PostHireRequest(HireRequest hireRequest)
         {
             _context.HireRequests.Add(hireRequest);
@@ -115,7 +111,6 @@ namespace p2API.Controllers
             return CreatedAtAction("GetHireRequest", new { id = hireRequest.HireRequestId }, hireRequest);
         }
 
-        // DELETE: api/HireRequests/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<HireRequest>> DeleteHireRequest(int id)
         {
