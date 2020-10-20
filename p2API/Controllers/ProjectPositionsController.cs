@@ -42,37 +42,55 @@ namespace p2API.Controllers
             return projectPositions;
         }
 
+        [HttpGet("Projects/{id}")]
+        public async Task<ActionResult<ProjectPositions>> GetPositionsByProjectId(int id)
+        {
+            var projectPositions = await _context.ProjectPositions.Where(b => (b.ProjectId == id)).ToListAsync();
+
+            if (projectPositions == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(projectPositions);
+        }
+
+
+
+
+
+
         // PUT: api/ProjectPositions/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProjectPositions(int id, ProjectPositions projectPositions)
-        {
-            if (id != projectPositions.ProjectPositionsId)
-            {
-                return BadRequest();
-            }
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> PutProjectPositions(int id, ProjectPositions projectPositions)
+        //{
+        //    if (id != projectPositions.ProjectPositionsId)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            _context.Entry(projectPositions).State = EntityState.Modified;
+        //    _context.Entry(projectPositions).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProjectPositionsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //    try
+        //    {
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!ProjectPositionsExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
 
         // POST: api/ProjectPositions
         // To protect from overposting attacks, enable the specific properties you want to bind to, for

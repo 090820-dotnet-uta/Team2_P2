@@ -104,34 +104,34 @@ namespace p2API.Controllers
         // PUT: api/Projects/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProject(int id, Project project)
-        {
-            if (id != project.ProjectId)
-            {
-                return BadRequest();
-            }
+        ////[HttpPut("{id}")]
+        ////public async Task<IActionResult> PutProject(int id, Project project)
+        ////{
+        ////    if (id != project.ProjectId)
+        ////    {
+        ////        return BadRequest();
+        ////    }
 
-            _context.Entry(project).State = EntityState.Modified;
+        ////    _context.Entry(project).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProjectExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        ////    try
+        ////    {
+        ////        await _context.SaveChangesAsync();
+        ////    }
+        ////    catch (DbUpdateConcurrencyException)
+        ////    {
+        ////        if (!ProjectExists(id))
+        ////        {
+        ////            return NotFound();
+        ////        }
+        ////        else
+        ////        {
+        ////            throw;
+        ////        }
+        ////    }
 
-            return NoContent();
-        }
+        ////    return NoContent();
+        ////}
 
 
 
