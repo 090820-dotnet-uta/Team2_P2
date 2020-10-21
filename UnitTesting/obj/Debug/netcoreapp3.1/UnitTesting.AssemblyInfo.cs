@@ -12,6 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\admin\\Desktop\\Team2_P2\\DataAccess", "DataAccess.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\admin\\Desktop\\Team2_P2\\Models", "Models.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("p2API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\admin\\Desktop\\Team2_P2\\p2API", "p2API.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnitTesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

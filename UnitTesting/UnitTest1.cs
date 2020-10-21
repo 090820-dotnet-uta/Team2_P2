@@ -13,13 +13,31 @@ using RestSharp.Extensions;
 using System.Web.Http.Results;
 using Microsoft.AspNetCore.Identity;
 using Models.ViewModels;
+using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace UnitTesting
 {
-    public class UnitTest1
+    public class UnitTest1 : IClassFixture<WebApplicationFactory<p2API.Startup>>
     {
 
-     
+        private readonly WebApplicationFactory<p2API.Startup> _factory;
+
+        public UnitTest1(WebApplicationFactory<p2API.Startup> factory)
+        {
+            _factory = factory;
+        }
+
+        [Theory(Skip = "e2e")]
+        [InlineData("/")]
+        public async Task Get_EndpointReturnSuccess(string url)
+        {
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync(url);
+
+            response.EnsureSuccessStatusCode();
+            Assert.Equal("text/html; charset=utf-8", response.Content.Headers
+                .ContentType.ToString());
+        }
 
         [Fact]
         public async void TestReturnProjectFromDb()
