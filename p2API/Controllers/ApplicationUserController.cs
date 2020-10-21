@@ -118,6 +118,32 @@ namespace p2API.Controllers
             };
         }
 
+
+        [HttpPut("{id}")]
+        [Route("ApplicationUser/Edit/{id}")]
+        public async Task<IActionResult> UpdateUser (string id, string description)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            user.Description = description;
+            try
+            {
+                await _userManager.UpdateAsync(user);
+            }
+            catch (Exception e)
+            {
+                if (user == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return Ok(user);
+        }
+
         [HttpPost]
         [Route("Login")]
         //POST : /api/ApplicationUser/Login
@@ -143,6 +169,8 @@ namespace p2API.Controllers
             else
                 return BadRequest(new { message = "Username or password is incorrect." });
         }
+      
+
 
 
     }
