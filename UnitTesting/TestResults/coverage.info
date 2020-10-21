@@ -6806,11 +6806,11 @@ FNH:0
 end_of_record
 SF:C:\Users\admin\Desktop\Team2_P2\DataAccess\Databasecontext.cs
 FN:18,System.Void DataAccess.DataAccess.Databasecontext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
-FNDA:30,System.Void DataAccess.DataAccess.Databasecontext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
-DA:19,30
-DA:20,30
-DA:21,30
-DA:22,30
+FNDA:34,System.Void DataAccess.DataAccess.Databasecontext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+DA:19,34
+DA:20,34
+DA:21,34
+DA:22,34
 FN:25,System.Void DataAccess.DataAccess.Databasecontext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 FNDA:1,System.Void DataAccess.DataAccess.Databasecontext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 DA:26,1
@@ -6839,43 +6839,40 @@ FN:53,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.LoginInfo> DataAccess.
 FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.LoginInfo> DataAccess.DataAccess.Databasecontext::get_LoginInfos()
 DA:54,0
 FN:54,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Contractor> DataAccess.DataAccess.Databasecontext::get_Contractors()
-FNDA:37,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Contractor> DataAccess.DataAccess.Databasecontext::get_Contractors()
-DA:55,37
+FNDA:41,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Contractor> DataAccess.DataAccess.Databasecontext::get_Contractors()
+DA:55,41
 FN:56,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Position> DataAccess.DataAccess.Databasecontext::get_Positions()
 FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Position> DataAccess.DataAccess.Databasecontext::get_Positions()
 DA:57,0
 FN:58,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Skill> DataAccess.DataAccess.Databasecontext::get_Skills()
-FNDA:38,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Skill> DataAccess.DataAccess.Databasecontext::get_Skills()
-DA:59,38
+FNDA:42,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Skill> DataAccess.DataAccess.Databasecontext::get_Skills()
+DA:59,42
 FN:59,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Client> DataAccess.DataAccess.Databasecontext::get_Clients()
-FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Client> DataAccess.DataAccess.Databasecontext::get_Clients()
-DA:60,0
+FNDA:44,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Client> DataAccess.DataAccess.Databasecontext::get_Clients()
+DA:60,44
 FN:61,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Project> DataAccess.DataAccess.Databasecontext::get_Projects()
-FNDA:41,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Project> DataAccess.DataAccess.Databasecontext::get_Projects()
-DA:62,41
+FNDA:45,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.Project> DataAccess.DataAccess.Databasecontext::get_Projects()
+DA:62,45
 FN:63,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.ProjectPositions> DataAccess.DataAccess.Databasecontext::get_ProjectPositions()
-FNDA:39,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.ProjectPositions> DataAccess.DataAccess.Databasecontext::get_ProjectPositions()
-DA:64,39
+FNDA:43,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.ProjectPositions> DataAccess.DataAccess.Databasecontext::get_ProjectPositions()
+DA:64,43
 FN:65,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.PositionNeedsSkill> DataAccess.DataAccess.Databasecontext::get_PositionNeedsSkills()
-FNDA:37,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.PositionNeedsSkill> DataAccess.DataAccess.Databasecontext::get_PositionNeedsSkills()
-DA:66,37
-FN:67,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.UserHasSkill> DataAccess.DataAccess.Databasecontext::get_UserHasSkills()
-FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.UserHasSkill> DataAccess.DataAccess.Databasecontext::get_UserHasSkills()
-DA:68,0
+FNDA:41,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.PositionNeedsSkill> DataAccess.DataAccess.Databasecontext::get_PositionNeedsSkills()
+DA:66,41
 FN:69,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.HireRequest> DataAccess.DataAccess.Databasecontext::get_HireRequests()
-FNDA:39,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.HireRequest> DataAccess.DataAccess.Databasecontext::get_HireRequests()
-DA:70,39
+FNDA:43,Microsoft.EntityFrameworkCore.DbSet`1<Models.Models.HireRequest> DataAccess.DataAccess.Databasecontext::get_HireRequests()
+DA:70,43
 FN:11,System.Void DataAccess.DataAccess.Databasecontext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<DataAccess.DataAccess.Databasecontext>)
-FNDA:30,System.Void DataAccess.DataAccess.Databasecontext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<DataAccess.DataAccess.Databasecontext>)
-DA:12,30
-DA:13,30
-DA:16,30
-LF:39
-LH:35
+FNDA:34,System.Void DataAccess.DataAccess.Databasecontext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<DataAccess.DataAccess.Databasecontext>)
+DA:12,34
+DA:13,34
+DA:16,34
+LF:38
+LH:36
 BRF:0
 BRH:0
-FNF:13
-FNH:9
+FNF:12
+FNH:10
 end_of_record
 SF:C:\Users\admin\Desktop\Team2_P2\Models\ViewModels\LoginInfoVM.cs
 FN:8,System.String Models.ViewModels.LoginInfoVM::get_Username()
@@ -6939,8 +6936,8 @@ FN:26,System.Int32 Models.Models.Client::get_ClientId()
 FNDA:0,System.Int32 Models.Models.Client::get_ClientId()
 DA:27,0
 FN:27,System.String Models.Models.Client::get_Username()
-FNDA:0,System.String Models.Models.Client::get_Username()
-DA:28,0
+FNDA:7,System.String Models.Models.Client::get_Username()
+DA:28,7
 FN:28,System.String Models.Models.Client::get_FirstName()
 FNDA:0,System.String Models.Models.Client::get_FirstName()
 DA:29,0
@@ -6957,21 +6954,21 @@ FN:32,Models.Models.LoginInfo Models.Models.Client::get_ThisLoginInfo()
 FNDA:0,Models.Models.LoginInfo Models.Models.Client::get_ThisLoginInfo()
 DA:33,0
 FN:17,System.Void Models.Models.Client::.ctor(System.String,System.String,System.String,System.String,System.String)
-FNDA:0,System.Void Models.Models.Client::.ctor(System.String,System.String,System.String,System.String,System.String)
-DA:18,0
-DA:19,0
-DA:20,0
-DA:21,0
-DA:22,0
-DA:23,0
-DA:24,0
-DA:25,0
+FNDA:4,System.Void Models.Models.Client::.ctor(System.String,System.String,System.String,System.String,System.String)
+DA:18,4
+DA:19,4
+DA:20,4
+DA:21,4
+DA:22,4
+DA:23,4
+DA:24,4
+DA:25,4
 LF:15
-LH:0
+LH:9
 BRF:0
 BRH:0
 FNF:8
-FNH:0
+FNH:2
 end_of_record
 SF:C:\Users\admin\Desktop\Team2_P2\Models\Models\Contractor.cs
 FN:29,System.Int32 Models.Models.Contractor::get_ContractorId()
@@ -7218,36 +7215,6 @@ LH:0
 BRF:0
 BRH:0
 FNF:4
-FNH:0
-end_of_record
-SF:C:\Users\admin\Desktop\Team2_P2\Models\Models\UserHasSkill.cs
-FN:23,System.Int32 Models.Models.UserHasSkill::get_UserHasSkillId()
-FNDA:0,System.Int32 Models.Models.UserHasSkill::get_UserHasSkillId()
-DA:24,0
-FN:24,System.String Models.Models.UserHasSkill::get_LoginInfoId()
-FNDA:0,System.String Models.Models.UserHasSkill::get_LoginInfoId()
-DA:25,0
-FN:25,System.Int32 Models.Models.UserHasSkill::get_SkillId()
-FNDA:0,System.Int32 Models.Models.UserHasSkill::get_SkillId()
-DA:26,0
-FN:26,Models.Models.LoginInfo Models.Models.UserHasSkill::get_ThisLoginInfo()
-FNDA:0,Models.Models.LoginInfo Models.Models.UserHasSkill::get_ThisLoginInfo()
-DA:27,0
-FN:27,Models.Models.Skill Models.Models.UserHasSkill::get_ThisSkill()
-FNDA:0,Models.Models.Skill Models.Models.UserHasSkill::get_ThisSkill()
-DA:28,0
-FN:17,System.Void Models.Models.UserHasSkill::.ctor(System.String,System.Int32)
-FNDA:0,System.Void Models.Models.UserHasSkill::.ctor(System.String,System.Int32)
-DA:18,0
-DA:19,0
-DA:20,0
-DA:21,0
-DA:22,0
-LF:10
-LH:0
-BRF:0
-BRH:0
-FNF:6
 FNH:0
 end_of_record
 SF:C:\Users\admin\Desktop\Team2_P2\Models\ViewModels\ClientVM.cs
@@ -7615,80 +7582,57 @@ DA:106,0
 DA:107,0
 DA:108,0
 FN:18,System.Void p2API.Controllers.ClientsController::.ctor(DataAccess.DataAccess.Databasecontext)
-FNDA:0,System.Void p2API.Controllers.ClientsController::.ctor(DataAccess.DataAccess.Databasecontext)
-DA:19,0
-DA:20,0
-DA:21,0
-DA:22,0
+FNDA:4,System.Void p2API.Controllers.ClientsController::.ctor(DataAccess.DataAccess.Databasecontext)
+DA:19,4
+DA:20,4
+DA:21,4
+DA:22,4
 FN:26,System.Void p2API.Controllers.ClientsController/<GetClients>d__2::MoveNext()
-FNDA:0,System.Void p2API.Controllers.ClientsController/<GetClients>d__2::MoveNext()
-DA:27,0
-DA:28,0
-DA:29,0
+FNDA:1,System.Void p2API.Controllers.ClientsController/<GetClients>d__2::MoveNext()
+DA:27,1
+DA:28,1
+DA:29,1
 FN:33,System.Void p2API.Controllers.ClientsController/<GetClient>d__3::MoveNext()
-FNDA:0,System.Void p2API.Controllers.ClientsController/<GetClient>d__3::MoveNext()
-DA:34,0
-DA:35,0
-DA:37,0
+FNDA:1,System.Void p2API.Controllers.ClientsController/<GetClient>d__3::MoveNext()
+DA:34,1
+DA:35,1
+DA:37,1
 DA:38,0
 DA:39,0
-DA:42,0
-DA:43,0
+DA:42,1
+DA:43,1
 BRDA:35,72,0,0
-BRDA:35,72,1,0
+BRDA:35,72,1,1
 BRDA:37,187,0,0
-BRDA:37,187,1,0
-FN:49,System.Void p2API.Controllers.ClientsController/<PutClient>d__4::MoveNext()
-FNDA:0,System.Void p2API.Controllers.ClientsController/<PutClient>d__4::MoveNext()
-DA:50,0
-DA:51,0
-DA:52,0
-DA:53,0
-DA:56,0
-DA:59,0
-DA:60,0
-DA:61,0
-DA:62,0
-DA:63,0
-DA:64,0
-DA:65,0
-DA:66,0
-DA:69,0
-DA:70,0
-DA:74,0
-DA:75,0
-BRDA:51,39,0,0
-BRDA:51,39,1,0
-BRDA:64,243,0,0
-BRDA:64,243,1,0
-FN:81,System.Void p2API.Controllers.ClientsController/<PostClient>d__5::MoveNext()
-FNDA:0,System.Void p2API.Controllers.ClientsController/<PostClient>d__5::MoveNext()
-DA:82,0
-DA:83,0
-DA:84,0
-DA:86,0
-DA:87,0
-FN:91,System.Void p2API.Controllers.ClientsController/<DeleteClient>d__6::MoveNext()
-FNDA:0,System.Void p2API.Controllers.ClientsController/<DeleteClient>d__6::MoveNext()
-DA:92,0
-DA:93,0
-DA:94,0
+BRDA:37,187,1,1
+FN:81,System.Void p2API.Controllers.ClientsController/<PostClient>d__4::MoveNext()
+FNDA:1,System.Void p2API.Controllers.ClientsController/<PostClient>d__4::MoveNext()
+DA:82,1
+DA:83,1
+DA:84,1
+DA:86,1
+DA:87,1
+FN:91,System.Void p2API.Controllers.ClientsController/<DeleteClient>d__5::MoveNext()
+FNDA:1,System.Void p2API.Controllers.ClientsController/<DeleteClient>d__5::MoveNext()
+DA:92,1
+DA:93,1
+DA:94,1
 DA:95,0
 DA:96,0
-DA:99,0
-DA:100,0
-DA:102,0
-DA:103,0
+DA:99,1
+DA:100,1
+DA:102,1
+DA:103,1
 BRDA:93,83,0,0
-BRDA:93,83,1,0
+BRDA:93,83,1,1
 BRDA:94,198,0,0
-BRDA:94,198,1,0
-LF:48
-LH:0
-BRF:12
-BRH:0
-FNF:7
-FNH:0
+BRDA:94,198,1,1
+LF:31
+LH:24
+BRF:8
+BRH:4
+FNF:6
+FNH:5
 end_of_record
 SF:C:\Users\admin\Desktop\Team2_P2\p2API\Controllers\ContractorsController.cs
 FN:105,System.Boolean p2API.Controllers.ContractorsController::ContractorExists(System.Int32)
@@ -8322,84 +8266,16 @@ FNF:1
 FNH:0
 end_of_record
 SF:C:\Users\admin\Desktop\Team2_P2\p2API\Controllers\UserHasSkillsController.cs
-FN:105,System.Boolean p2API.Controllers.UserHasSkillsController::UserHasSkillExists(System.Int32)
-FNDA:0,System.Boolean p2API.Controllers.UserHasSkillsController::UserHasSkillExists(System.Int32)
-DA:106,0
-DA:107,0
-DA:108,0
 FN:18,System.Void p2API.Controllers.UserHasSkillsController::.ctor(DataAccess.DataAccess.Databasecontext)
 FNDA:0,System.Void p2API.Controllers.UserHasSkillsController::.ctor(DataAccess.DataAccess.Databasecontext)
 DA:19,0
 DA:20,0
 DA:21,0
 DA:22,0
-FN:26,System.Void p2API.Controllers.UserHasSkillsController/<GetUserHasSkills>d__2::MoveNext()
-FNDA:0,System.Void p2API.Controllers.UserHasSkillsController/<GetUserHasSkills>d__2::MoveNext()
-DA:27,0
-DA:28,0
-DA:29,0
-FN:33,System.Void p2API.Controllers.UserHasSkillsController/<GetUserHasSkill>d__3::MoveNext()
-FNDA:0,System.Void p2API.Controllers.UserHasSkillsController/<GetUserHasSkill>d__3::MoveNext()
-DA:34,0
-DA:35,0
-DA:37,0
-DA:38,0
-DA:39,0
-DA:42,0
-DA:43,0
-BRDA:35,72,0,0
-BRDA:35,72,1,0
-BRDA:37,187,0,0
-BRDA:37,187,1,0
-FN:49,System.Void p2API.Controllers.UserHasSkillsController/<PutUserHasSkill>d__4::MoveNext()
-FNDA:0,System.Void p2API.Controllers.UserHasSkillsController/<PutUserHasSkill>d__4::MoveNext()
-DA:50,0
-DA:51,0
-DA:52,0
-DA:53,0
-DA:56,0
-DA:59,0
-DA:60,0
-DA:61,0
-DA:62,0
-DA:63,0
-DA:64,0
-DA:65,0
-DA:66,0
-DA:69,0
-DA:70,0
-DA:74,0
-DA:75,0
-BRDA:51,39,0,0
-BRDA:51,39,1,0
-BRDA:64,243,0,0
-BRDA:64,243,1,0
-FN:81,System.Void p2API.Controllers.UserHasSkillsController/<PostUserHasSkill>d__5::MoveNext()
-FNDA:0,System.Void p2API.Controllers.UserHasSkillsController/<PostUserHasSkill>d__5::MoveNext()
-DA:82,0
-DA:83,0
-DA:84,0
-DA:86,0
-DA:87,0
-FN:91,System.Void p2API.Controllers.UserHasSkillsController/<DeleteUserHasSkill>d__6::MoveNext()
-FNDA:0,System.Void p2API.Controllers.UserHasSkillsController/<DeleteUserHasSkill>d__6::MoveNext()
-DA:92,0
-DA:93,0
-DA:94,0
-DA:95,0
-DA:96,0
-DA:99,0
-DA:100,0
-DA:102,0
-DA:103,0
-BRDA:93,83,0,0
-BRDA:93,83,1,0
-BRDA:94,198,0,0
-BRDA:94,198,1,0
-LF:48
+LF:4
 LH:0
-BRF:12
+BRF:0
 BRH:0
-FNF:7
+FNF:1
 FNH:0
 end_of_record

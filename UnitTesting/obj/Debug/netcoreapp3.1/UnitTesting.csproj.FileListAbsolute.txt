@@ -256,3 +256,4 @@ C:\Users\admin\Desktop\Team2_P2\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.
 C:\Users\admin\Desktop\Team2_P2\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.pdb
 C:\Users\admin\Desktop\Team2_P2\UnitTesting\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\admin\Desktop\Team2_P2\UnitTesting\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\admin\Desktop\Team2_P2\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.csproj.CoreCompileInputs.cache

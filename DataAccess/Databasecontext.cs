@@ -65,7 +65,7 @@ namespace DataAccess.DataAccess
 
         public DbSet <PositionNeedsSkill> PositionNeedsSkills { get; set; }
 
-        public DbSet <UserHasSkill> UserHasSkills { get; set; }
+      //  public DbSet <UserHasSkill> UserHasSkills { get; set; }
 
         public DbSet <HireRequest> HireRequests { get; set; }
     }

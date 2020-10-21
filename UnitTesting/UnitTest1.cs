@@ -876,11 +876,100 @@ namespace UnitTesting
 
         }
 
+      
+ 
 
-   
+        [Fact]
+        public async void TestReturnClients()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var Client = new Client("test1", "test2", "test3", "test4", "test5");
+                context.Clients.Add(Client);
+                context.SaveChanges();
+                ClientsController ContractorPositions = new ClientsController(context);
+
+                var clients = await ContractorPositions.GetClients();
+                IEnumerable<Client> result = clients.Value;
+                Assert.Single(result);
+                Assert.Equal("test1", result.Last().Username);
+
+            }
+
+        }
+
+        [Fact]
+        public async void TestReturnClient()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test2")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var Client = new Client("test1", "test2", "test3", "test4", "test5");
+                context.Clients.Add(Client);
+                context.SaveChanges();
+                ClientsController client = new ClientsController(context);
+
+                var clients = await client.GetClient(1);
+                Client result = clients.Value;
+               
+                Assert.Equal("test1", result.Username);
+
+            }
+
+        }
 
 
 
+        [Fact]
+        public async void TestPostClient()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test3")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var Client = new Client("test1", "test2", "test3", "test4", "test5");
+                
+                ClientsController client = new ClientsController(context);
+                 await client.PostClient(Client);
+                var result = context.Clients.Find(1);
+
+                Assert.Equal("test1", result.Username);
+
+            }
+
+        }
+
+
+        [Fact]
+        public async void TestDeleteClient()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test4")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var Client = new Client("test1", "test2", "test3", "test4", "test5");
+
+                ClientsController client = new ClientsController(context);
+                context.Clients.Add(Client);
+                await client.DeleteClient(1);
+                var result = context.Clients.Find(1);
+
+                Assert.Null(result);
+
+            }
+
+        }
 
 
 
