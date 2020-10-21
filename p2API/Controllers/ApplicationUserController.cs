@@ -120,14 +120,18 @@ namespace p2API.Controllers
 
 
         [HttpPut("{id}")]
-        [Route("ApplicationUser/Edit/{id}")]
-        public async Task<IActionResult> UpdateUser (string id, string description)
+        
+        public async Task<IActionResult> UpdateUser (LoginInfo model)
         {
-            var user = await _userManager.FindByIdAsync(id);
-            user.Description = description;
+            var user = await _userManager.FindByIdAsync(model.Id);
+            user.Description = model.Description;
+            user.FirstName = model.FirstName;
+            user.AccountType = model.AccountType;
+            user.LastName = model.LastName;
             try
             {
                 await _userManager.UpdateAsync(user);
+                
             }
             catch (Exception e)
             {
