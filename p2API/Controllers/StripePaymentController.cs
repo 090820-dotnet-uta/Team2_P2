@@ -17,7 +17,7 @@ namespace p2API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] StripePaymentRequest paymentRequest)
         {
-            StripeConfiguration.ApiKey = "pk_test_51He61ZCIJStw0TfUavdgaagOU0HkIFp8fcrM1BzvVu6o8OtwXlIsyin6l62zLDPbpkNLJMPbECs9x7TXRwV3OW1T00rs3UY7CT"
+            StripeConfiguration.ApiKey = "pk_test_51He61ZCIJStw0TfUavdgaagOU0HkIFp8fcrM1BzvVu6o8OtwXlIsyin6l62zLDPbpkNLJMPbECs9x7TXRwV3OW1T00rs3UY7CT";
 
             var myCharge = new ChargeCreateOptions();
             myCharge.Source = paymentRequest.tokenId;
