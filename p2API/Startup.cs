@@ -35,8 +35,22 @@ namespace p2API
         public void ConfigureServices(IServiceCollection services)
         {
 
-
-            var stripe = Configuration.GetSection("Stripe");
+            // services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Policy1",
+                    builder =>
+                    {
+                        builder.WithOrigins("https://githelpclient.azurewebsites.net/checkout",
+                            "http://localhost:4200/checkout",
+                            "http://localhost:4200",
+                            "https://githelpclient.azurewebsites.net"
+                                            ).AllowAnyHeader()
+                                        .AllowAnyMethod().WithMethods("PUT", "DELETE", "GET", "POST");
+                        ;
+                    });
+            });
+                var stripe = Configuration.GetSection("Stripe");
             StripeConfiguration.ApiKey = stripe[""];
             services.AddControllers();
             services.AddControllers().AddNewtonsoftJson();
@@ -50,7 +64,7 @@ namespace p2API
                 options.Password.RequiredLength = 4;
                 options.Password.RequireNonAlphanumeric = false;
             });
-            services.AddCors();
+            
 
             var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret"].ToString());
 
@@ -87,7 +101,14 @@ namespace p2API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(builder => builder.WithOrigins("http://localhost:4200/").AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            // app.UseCors(builder => builder.WithOrigins("http://localhost:4200/").AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            app.UseCors(builder => builder
+             .AllowAnyHeader()
+             .AllowAnyMethod()
+             .SetIsOriginAllowed((host) => true)
+             .AllowCredentials()
+             );
+            app.UseMiddleware<CORMiddleware>();
             app.UseHttpsRedirection();
 
             app.UseRouting();
