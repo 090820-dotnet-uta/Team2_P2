@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Cj/QvCo9Owp5IiFMmQLEN2cNtelOmKFn7nu+L0qNtGmT9iBTPfxjM0k03eSFZbOneczsrEJ5omd8itDlSsasjQ==",
+  "dgSpecHash": "ngbEXoawLFRyiXb2ztxil0zo3zYpNmGJhxmx/dIN90C2aBr+tre3O10d/8ccp45SQjPU+a1NOw49GYOyQ1HAoA==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\Desktop\\Team2_P2\\UnitTesting\\UnitTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\aspnet.security.oauth.linkedin\\3.1.4\\aspnet.security.oauth.linkedin.3.1.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\coverlet.msbuild\\2.9.0\\coverlet.msbuild.2.9.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -100,6 +101,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\opencover\\4.7.922\\opencover.4.7.922.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\restsharp\\105.0.1\\restsharp.105.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

@@ -594,7 +594,7 @@ namespace UnitTesting
         public async void TestPostContractor()
         {
             var options = new DbContextOptionsBuilder<Databasecontext
-                >().UseInMemoryDatabase(databaseName: "Test2")
+                >().UseInMemoryDatabase(databaseName: "Test3")
                 .Options;
 
             using (var context = new Databasecontext(options))
@@ -614,7 +614,7 @@ namespace UnitTesting
         public async void TestDeleteContractor()
         {
             var options = new DbContextOptionsBuilder<Databasecontext
-                >().UseInMemoryDatabase(databaseName: "Test2")
+                >().UseInMemoryDatabase(databaseName: "Test4")
                 .Options;
 
             using (var context = new Databasecontext(options))
@@ -631,6 +631,256 @@ namespace UnitTesting
             }
 
         }
+        [Fact]
+        public async void TestHireRequests()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test1")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var hireRequest = new HireRequest(1, "1", "1");
+
+                HireRequestsController HireRequests = new HireRequestsController(context);
+                context.Add(hireRequest);
+                context.SaveChanges();
+
+                var hire = await HireRequests.GetHireRequests();
+                IEnumerable<HireRequest> result = hire.Value;
+                Assert.Single(result);
+                Assert.Equal("1", result.Last().ClientId);
+            }
+
+        }
+
+        [Fact]
+        public async void TestHireRequestsid()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test2")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var hireRequest = new HireRequest(1, "1", "1");
+
+                HireRequestsController HireRequests = new HireRequestsController(context);
+                context.Add(hireRequest);
+                context.SaveChanges();
+
+                var hire = await HireRequests.GetHireRequest(1);
+                HireRequest result = hire.Value;
+
+                Assert.Equal("1", result.ClientId);
+            }
+
+        }
+
+        [Fact]
+        public async void TestClientRequests()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test4")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var hireRequest = new HireRequest(1, "1", "1");
+
+                HireRequestsController HireRequests = new HireRequestsController(context);
+                context.Add(hireRequest);
+                context.SaveChanges();
+
+                var actionresult = await HireRequests.GetClientRequest("1");
+                var result = (OkObjectResult)actionresult.Result;
+                List<HireRequest> result2 = (List<HireRequest>)result.Value;
+                Assert.Equal("1", result2.Last().ClientId);
+
+
+
+            }
+
+        }
+
+        [Fact]
+        public async void TestContractorRequests()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test5")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var hireRequest = new HireRequest(1, "1", "1");
+
+                HireRequestsController HireRequests = new HireRequestsController(context);
+                context.Add(hireRequest);
+                context.SaveChanges();
+
+                var actionresult = await HireRequests.GetContractorRequest("1");
+                var result = (OkObjectResult)actionresult.Result;
+                List<HireRequest> result2 = (List<HireRequest>)result.Value;
+                Assert.Equal("1", result2.Last().ContractorId);
+
+
+
+            }
+
+        }
+
+        [Fact]
+        public async void TestPostRequests()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test6")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var hireRequest = new HireRequest(1, "1", "1");
+
+                HireRequestsController HireRequests = new HireRequestsController(context);
+
+
+                await HireRequests.PostHireRequest(hireRequest);
+                var result = context.HireRequests.Find(1);
+                Assert.Equal("1", result.ContractorId);
+
+
+
+            }
+
+        }
+
+
+        [Fact]
+        public async void TestDeleteRequests()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test7")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var hireRequest = new HireRequest(1, "1", "1");
+
+                HireRequestsController HireRequests = new HireRequestsController(context);
+                context.Add(hireRequest);
+                context.SaveChanges();
+                await HireRequests.DeleteHireRequest(1);
+                var result = context.HireRequests.Find(1);
+                Assert.Null(result);
+
+
+
+            }
+
+        }
+
+
+        [Fact]
+        public async void TestNeedSkills()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test7")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var needskills = new PositionNeedsSkill(1, 1);
+
+                PositionNeedsSkillsController posskill = new PositionNeedsSkillsController(context);
+                context.Add(needskills);
+                context.SaveChanges();
+                var result = await posskill.GetPositionNeedsSkills();
+                IEnumerable<PositionNeedsSkill> results = result.Value;
+                Assert.Single(results);
+                Assert.IsType<PositionNeedsSkill>(results.Last());
+
+
+
+            }
+
+        }
+
+        [Fact]
+        public async void TestNeedSkill()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test1")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var needskills = new PositionNeedsSkill(1, 1);
+
+                PositionNeedsSkillsController posskill = new PositionNeedsSkillsController(context);
+                context.Add(needskills);
+                context.SaveChanges();
+                var result = await posskill.GetPositionNeedsSkill(1);
+                PositionNeedsSkill results = result.Value;
+                Assert.Equal(1, results.PositionId);
+                Assert.IsType<PositionNeedsSkill>(results);
+
+
+
+            }
+
+        }
+
+        [Fact]
+        public async void TestPostNeedsSkill()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test2")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var needskills = new PositionNeedsSkill(1, 1);
+
+                PositionNeedsSkillsController posskill = new PositionNeedsSkillsController(context);
+
+                await posskill.PostPositionNeedsSkill(needskills);
+                var result = context.PositionNeedsSkills.Find(1);
+                Assert.Equal(1, result.PositionId);
+                Assert.IsType<PositionNeedsSkill>(result);
+
+
+
+            }
+
+        }
+        [Fact]
+        public async void TestDeleteNeedsSkill()
+        {
+            var options = new DbContextOptionsBuilder<Databasecontext
+                >().UseInMemoryDatabase(databaseName: "Test3")
+                .Options;
+
+            using (var context = new Databasecontext(options))
+            {
+                var needskills = new PositionNeedsSkill(1, 1);
+
+                PositionNeedsSkillsController posskill = new PositionNeedsSkillsController(context);
+                context.Add(needskills);
+                context.SaveChanges();
+                await posskill.DeletePositionNeedsSkill(1);
+                var result = context.PositionNeedsSkills.Find(1);
+                Assert.Null(result);
+
+
+
+            }
+
+        }
+
+
+   
+
+
+
 
 
 
