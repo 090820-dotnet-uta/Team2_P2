@@ -45,8 +45,7 @@ steps:
   inputs:
     command: 'test'
     projects: '$(solution)'
-    arguments: '--collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover'
-
+    arguments: '--logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=$(Build.SourcesDirectory)/coverage/ /p:MergeWith=$(Build.SourcesDirectory)/coverage/ --collect "Code coverage"'
 - task: SonarCloudAnalyze@1
 - task: DotNetCoreCLI@2
   inputs:
