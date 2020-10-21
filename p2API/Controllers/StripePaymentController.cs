@@ -9,27 +9,28 @@ using Stripe;
 
 namespace p2API.Controllers
 {
-    //[Route("api/[controller]")]
-    //[ApiController]
-    //public class StripePaymentController : ControllerBase
-    //{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class StripePaymentController : ControllerBase
+    {
 
-    //    [HttpPost]
-    //    public Charge CreateCharge([FromBody] StripeCharge createOptions)
-    //    {
-    //        var options = new ChargeCreateOptions
-    //        {
-    //            Amount = createOptions.Amount,
-    //            Currency = "usd",
-    //            Source = "tok_visa",
-    //            ReceiptEmail = "hello_dotnet@example.com",
-    //        };
-    //        var service = new ChargeService();
-    //        var charge = service.Create(options);
-    //        return charge;
-    //    }
+        [HttpPost]
+        public PaymentIntent CreateCharge()
+        {
+            var options = new PaymentIntentCreateOptions
+            {
+                Amount = 10,
+                Currency = "usd",
+                PaymentMethodTypes = new List<string> {
+                                "card",
+                 },
+            };
 
+            var service = new PaymentIntentService();
+            var intent = service.Create(options);
 
-    //}
+            return intent;
+        }
+    }
 }
 
