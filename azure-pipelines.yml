@@ -47,7 +47,7 @@ steps:
     projects: '$(solution)'
     arguments: '--collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover'
 
-
+- task: SonarCloudAnalyze@1
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
