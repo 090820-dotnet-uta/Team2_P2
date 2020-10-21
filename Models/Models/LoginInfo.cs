@@ -19,6 +19,8 @@ namespace Models.Models
         public string LastName { get; set; }
 
         public string AccountType { get; set; }
+
+        public string Description { get; set; }
     }
 
 

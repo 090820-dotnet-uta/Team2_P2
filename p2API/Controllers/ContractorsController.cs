@@ -45,34 +45,34 @@ namespace p2API.Controllers
         // PUT: api/Contractors/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutContractor(int id, Contractor contractor)
-        {
-            if (id != contractor.ContractorId)
-            {
-                return BadRequest();
-            }
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> PutContractor(int id, Contractor contractor)
+        //{
+        //    if (id != contractor.ContractorId)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            _context.Entry(contractor).State = EntityState.Modified;
+        //    _context.Entry(contractor).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ContractorExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //    try
+        //    {
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!ContractorExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
 
         // POST: api/Contractors
         // To protect from overposting attacks, enable the specific properties you want to bind to, for

@@ -72,7 +72,8 @@ namespace p2API.Controllers
                 user.FirstName,
                 user.LastName,
                 user.Email,
-                user.UserName
+                user.UserName,
+                user.Description
             };
         }
 
@@ -92,7 +93,8 @@ namespace p2API.Controllers
                 user.LastName,
                 user.Email,
                 user.UserName,
-                user.AccountType
+                user.AccountType,
+                user.Description
             };
         }
 
@@ -111,7 +113,8 @@ namespace p2API.Controllers
                 user.LastName,
                 user.Email,
                 user.UserName,
-                user.AccountType
+                user.AccountType,
+                user.Description
             };
         }
 

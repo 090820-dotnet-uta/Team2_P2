@@ -420,29 +420,14 @@ namespace DataAccess.Migrations
                     b.ToTable("Skills");
                 });
 
-            modelBuilder.Entity("Models.Models.UserHasSkill", b =>
-                {
-                    b.Property<int>("UserHasSkillId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("LoginInfoId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SkillId")
-                        .HasColumnType("int");
-
-                    b.HasKey("UserHasSkillId");
-
-                    b.ToTable("UserHasSkills");
-                });
-
             modelBuilder.Entity("Models.Models.LoginInfo", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
                     b.Property<string>("AccountType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
