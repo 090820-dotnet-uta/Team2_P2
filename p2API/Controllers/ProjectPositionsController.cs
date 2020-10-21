@@ -60,37 +60,35 @@ namespace p2API.Controllers
 
 
 
-        // PUT: api/ProjectPositions/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutProjectPositions(int id, ProjectPositions projectPositions)
-        //{
-        //    if (id != projectPositions.ProjectPositionsId)
-        //    {
-        //        return BadRequest();
-        //    }
+         //PUT: api/ProjectPositions/5
+      
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutProjectPositions(int id, ProjectPositions projectPositions)
+        {
+            if (id != projectPositions.ProjectPositionsId)
+            {
+                return BadRequest();
+           }
 
-        //    _context.Entry(projectPositions).State = EntityState.Modified;
+           _context.Entry(projectPositions).State = EntityState.Modified;
+    try
+           {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProjectPositionsExists(id))
+                {
+                    return NotFound();
+               }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!ProjectPositionsExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
-
-        //    return NoContent();
-        //}
+            return NoContent();
+        }
 
         // POST: api/ProjectPositions
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
